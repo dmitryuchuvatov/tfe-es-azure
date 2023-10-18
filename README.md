@@ -96,16 +96,17 @@ Result:
 ![Screenshot 2023-10-18 at 16 09 32](https://github.com/dmitryuchuvatov/tfe-es-azure/assets/119931089/565c8ad4-a194-4d19-89d6-edb4a6c9dbe9)
 
 
-Then, scroll down to Object Storage section, and select Azure:
+Then, scroll down to Object Storage section, and select Azure.
+
+You will need to specify Storage account name, Storage container, and Storage account key.
 
 ![Screenshot 2023-10-18 at 16 41 45](https://github.com/dmitryuchuvatov/tfe-es-azure/assets/119931089/296705b2-0cf2-4fbf-9143-1fed7439399b)
 
-You will need to specify Storage account name, Storage container, and Storage account key.
 Storage account name and Storage container are pre-configured via variables; to obtain a Storage account key navigate to Azure portal -> Storage accounts -> select your storage account name -> Access keys -> click "**Show**" next to **key1** and copy this value:
 
 ![Screenshot 2023-10-18 at 15 01 44](https://github.com/dmitryuchuvatov/tfe-es-azure/assets/119931089/e96f438f-d48a-475b-821f-12e9b40b1fdd)
 
-Once it done, scroll down to the bottom and click **Save**, followed by **Restart Now**
+Once it's done, scroll down to the bottom and click **Save**, followed by **Restart Now**
 
 ![Screenshot 2023-10-18 at 15 02 17](https://github.com/dmitryuchuvatov/tfe-es-azure/assets/119931089/d439a53b-c2c4-4726-9da9-20f9c071eab3)
 
