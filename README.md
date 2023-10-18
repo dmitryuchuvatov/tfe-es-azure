@@ -84,6 +84,43 @@ You will be redirected to **Settings** tab, where you need to setup an encryptio
 
 ![Screenshot 2023-10-18 at 14 57 20](https://github.com/dmitryuchuvatov/tfe-es-azure/assets/119931089/b02f5c25-67b9-40fc-92ef-a4a704b0cf0a)
 
+Scroll down, select **External Services** and specify the Username, Password, Hostname and Database name.
+
+Username and Password are pre-configured via variables, and Database name is default (**postgres**)
+
+To locate a Hostname, navigate to Azure portal -> Azure Database for PostgreSQL flexible servers -> click on the name of your newly provisioned database -> copy Server name:
+![Screenshot 2023-10-18 at 14 59 31](https://github.com/dmitryuchuvatov/tfe-es-azure/assets/119931089/3c40e3d0-48ce-4827-8e41-bd97147ceded)
+
+Result: 
+
+![Screenshot 2023-10-18 at 16 09 32](https://github.com/dmitryuchuvatov/tfe-es-azure/assets/119931089/565c8ad4-a194-4d19-89d6-edb4a6c9dbe9)
+
+
+Then, scroll down to Object Storage section, and select Azure:
+
+![Screenshot 2023-10-18 at 16 41 45](https://github.com/dmitryuchuvatov/tfe-es-azure/assets/119931089/296705b2-0cf2-4fbf-9143-1fed7439399b)
+
+You will need to specify Storage account name, Storage container, and Storage account key.
+Storage account name and Storage container are pre-configured via variables; to obtain a Storage account key navigate to Azure portal -> Storage accounts -> select your storage account name -> Access keys -> click "**Show**" next to **key1** and copy this value:
+
+![Screenshot 2023-10-18 at 15 01 44](https://github.com/dmitryuchuvatov/tfe-es-azure/assets/119931089/e96f438f-d48a-475b-821f-12e9b40b1fdd)
+
+Once it done, scroll down to the bottom and click **Save**, followed by **Restart Now**
+
+![Screenshot 2023-10-18 at 15 02 17](https://github.com/dmitryuchuvatov/tfe-es-azure/assets/119931089/d439a53b-c2c4-4726-9da9-20f9c071eab3)
+
+Monitor the status of Replicated services in dashboard and ensure that TFE has started.
+
+![Screenshot 2023-10-18 at 15 05 27](https://github.com/dmitryuchuvatov/tfe-es-azure/assets/119931089/914a9033-641a-482c-9d60-f98581974bc0)
+
+After that, click on **Open** to set up a user and proceed to create a Workspace:
+
+![Screenshot 2023-10-18 at 15 08 17](https://github.com/dmitryuchuvatov/tfe-es-azure/assets/119931089/4a71f11b-589e-4854-a32d-641924336707)
+
+![Screenshot 2023-10-18 at 15 08 31](https://github.com/dmitryuchuvatov/tfe-es-azure/assets/119931089/a86dea39-0215-474a-8f97-c8c79c6872f3)
+
+
+
 
 
 
